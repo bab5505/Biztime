@@ -5,7 +5,6 @@ const db = require("../db");
 let router = new express.Router();
 
 
-
 router.get("/", async function (req, res, next) {
   try {
     const result = await db.query(
@@ -131,7 +130,6 @@ router.put("/:id", async function (req, res, next) {
   }
 
 });
-
 
 
 router.delete("/:id", async function (req, res, next) {
